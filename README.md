@@ -81,11 +81,11 @@ For this approach, we first used the spacy library to annotate sentences. We ite
 
 ### Input
 
-**[-spanbert|-gpt3]** is either -spanbert or -gpt3, to indicate which relation extraction method we are requesting>
-**<google api key>** is your Google Custom Search Engine JSON API Key (see above)
-**<google engine id>** is your Google Custom Search Engine ID (see above)
-**<openai secret key>** is your OpenAI API secret key (see above)
-**<r>** is an integer between 1 and 4, indicating the relation to extract: 1 is for Schools_Attended, 2 is for Work_For, 3 is for Live_In, and 4 is for Top_Member_Employees
-**<t>** is a real number between 0 and 1, indicating the "extraction confidence threshold," which is the minimum extraction confidence that we request for the tuples in the output; t is ignored if we are specifying -gpt3
-**<q>** is a "seed query," which is a list of words in double quotes corresponding to a plausible tuple for the relation to extract (e.g., "bill gates microsoft" for relation Work_For)
-**<k>** is an integer greater than 0, indicating the number of tuples that we request in the output
+- **[-spanbert|-gpt3]** is either -spanbert or -gpt3, to indicate which relation extraction method we are requesting>
+- **<google api key>** is your Google Custom Search Engine JSON API Key (see above)
+- **<google engine id>** is your Google Custom Search Engine ID (see above)
+- **<openai secret key>** is your OpenAI API secret key (see above)
+- **<r>** is an integer between 1 and 4, indicating the relation to extract: 1 is for Schools_Attended, 2 is for Work_For, 3 is for Live_In, and 4 is for Top_Member_Employees
+- **<t>** is a real number between 0 and 1, indicating the "extraction confidence threshold," which is the minimum extraction confidence that we request for the tuples in the output; t is ignored if we are specifying -gpt3
+- **<q>** is a "seed query," which is a list of words in double quotes corresponding to a plausible tuple for the relation to extract (e.g., "bill gates microsoft" for relation Work_For)
+- **<k>** is an integer greater than 0, indicating the number of tuples that we request in the output
